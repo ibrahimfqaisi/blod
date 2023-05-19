@@ -10,6 +10,22 @@
     <p>اعداد الطالب عدنان غالب</p>
     <form action="#" method="post" class="needs-validation" novalidate>
       <div class="form-group">
+        <label for="full-name">الاسم الرباعي:</label>
+        <input type="text" id="full-name" name="full-name" class="form-control" required>
+        <div class="invalid-feedback">
+          هذا الحقل مطلوب.
+        </div>
+      </div>
+      
+      <div class="form-group">
+        <label for="national-id">الرقم الوطني:</label>
+        <input type="text" id="national-id" name="national-id" class="form-control" required>
+        <div class="invalid-feedback">
+          هذا الحقل مطلوب.
+        </div>
+      </div>
+      
+      <div class="form-group">
         <label for="blood-type">فصيلة الدم:</label>
         <select id="blood-type" name="blood-type" class="form-control">
           <option value="A+">A+</option>
