@@ -8,10 +8,10 @@
   <div class="container">
     <h1>طلب سيارة للتبرع بالدم</h1>
     <p>اعداد الطالب عدنان غالب</p>
-    <form action="#" method="post">
+    <form action="#" method="post" class="needs-validation" novalidate>
       <div class="form-group">
         <label for="blood-type">فصيلة الدم:</label>
-        <select id="blood-type" name="blood-type">
+        <select id="blood-type" name="blood-type" class="form-control">
           <option value="A+">A+</option>
           <option value="A-">A-</option>
           <option value="B+">B+</option>
@@ -24,9 +24,12 @@
       </div>
       <div class="form-group">
         <label for="medication">هل تناولت أي دواء اليوم؟</label>
-        <input type="text" id="medication" name="medication">
+        <input type="text" id="medication" name="medication" class="form-control" required>
+        <div class="invalid-feedback">
+          هذا الحقل مطلوب.
+        </div>
       </div>
-      <button type="submit">طلب الخدمة</button>
+      <button type="submit" class="btn btn-primary">طلب الخدمة</button>
     </form>
     <div class="encouragement">
         <p>قم بتغيير حياة شخص آخر وقم بالتبرع بالدم </p>
